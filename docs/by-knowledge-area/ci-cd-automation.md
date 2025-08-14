@@ -1,22 +1,32 @@
 ---
+icon: simple/openvpn
+title: CI-CD Automation Questions
+description: Questions Categorized by CI-CD
+subtitle: CI-CD Questions
+comments: true 
+# tags:
+#   - AWS
+#   - Terraform
+#   - OpenVPN
+status: new
 tags: [ci-cd, automation, pipelines, jenkins, gitlab-ci, github-actions, azure-devops, ci-cd]
 ---
 
-# Ci Cd Automation
+<!-- # Ci Cd Automation -->
 
-## Question 1: Placeholder Question?
-Your answer goes here.
+<!-- ## Question A: Placeholder Question?
+Your answer goes here. -->
 
 
-## CI/CD Questions
+# CI/CD Questions
 
 ---
 
-## How would you design a CI/CD pipeline that builds an application in AWS but deploys it to both AWS and Azure? {#ci-cd-multi-cloud-deploy}
+## Que 1 - How would you design a CI/CD pipeline that builds an application in AWS but deploys it to both AWS and Azure? {#ci-cd-multi-cloud-deploy1}
 
 !!! tip "Question 1"
 
-    ## How would you design a CI/CD pipeline that builds an application in AWS but deploys it to both AWS and Azure? {#ci-cd-multi-cloud-deploy}
+    <!-- ## How would you design a CI/CD pipeline that builds an application in AWS but deploys it to both AWS and Azure? {#ci-cd-multi-cloud-deploy} -->
 
     <!-- > **Tags:** #role:devops #competency:ci-cd #competency:system-design #tool:aws #tool:azure #type:technical -->
 
@@ -50,7 +60,7 @@ Your answer goes here.
 
 ---
 
-## 2- How would you design a CI/CD pipeline that builds an application in AWS but deploys it to both AWS and Azure? {#ci-cd-multi-cloud-deploy}
+## Que 2 - How would you design a CI/CD pipeline that builds an application in AWS but deploys it to both AWS and Azure? {#ci-cd-multi-cloud-deploy}
 
 !!! tip "Question 2"
 
