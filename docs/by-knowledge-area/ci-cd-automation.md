@@ -12,7 +12,9 @@ Your answer goes here.
 
 ---
 
-!!! tip "## Question"
+## How would you design a CI/CD pipeline that builds an application in AWS but deploys it to both AWS and Azure? {#ci-cd-multi-cloud-deploy}
+
+!!! tip "Question 1"
 
     ## How would you design a CI/CD pipeline that builds an application in AWS but deploys it to both AWS and Azure? {#ci-cd-multi-cloud-deploy}
 
@@ -42,8 +44,8 @@ Your answer goes here.
 
         !!! note
             Related Questions:
-            *   [How would you design a CI/CD pipeline that builds an application in AWS but deploys it to both AWS and Azure?](#ci-cd-multi-cloud-deploy)
-            *   [How would you design a CI/CD pipeline that builds an application in AWS but deploys it to both AWS and Azure?](#ci-cd-multi-cloud-deploy)
+            *   [How would you design a CI/CD pipeline that builds an application in AWS but deploys it to both AWS and Azure?](#ci-cd-multi-cloud-deploy)<br>
+            *   [How would you design a CI/CD pipeline that builds an application in AWS but deploys it to both AWS and Azure?](#ci-cd-multi-cloud-deploy)<br>
 
 
 
