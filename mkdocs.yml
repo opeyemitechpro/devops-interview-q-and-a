@@ -6,7 +6,7 @@ site_description: 📚 Curated DevOps, Cloud, and SRE interview Q&As — categor
 
 # Repo Details
 repo_url: https://github.com/opeyemitechpro/devops-interview-q-and-a
-repo_name: DevOps & Cloud Engineering Interview Q&A
+repo_name: DevOps Interview Q&A
 edit_uri: edit/main/docs/
 
 
@@ -301,7 +301,7 @@ copyright: |
 nav:
   - About Me: profile.md
   - Start Here: index.md
-  - Tags: tags.md
+  # - Tags: tags.md
   - By Role:
       - DevOps Engineer: by-role/devops-engineer.md
       - Cloud Engineer: by-role/cloud-engineer.md
