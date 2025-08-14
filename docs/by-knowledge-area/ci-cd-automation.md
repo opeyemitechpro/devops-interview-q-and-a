@@ -1,5 +1,5 @@
 ---
-tags: [ci-cd, automation, pipelines, jenkins, gitlab-ci, github-actions, azure-devops]
+tags: [ci-cd, automation, pipelines, jenkins, gitlab-ci, github-actions, azure-devops, ci-cd]
 ---
 
 # Ci Cd Automation
@@ -42,14 +42,12 @@ Your answer goes here.
         !!! warning "Warnings"
             Some warnings about the questions to note
 
-        !!! note
-            Related Questions:
+        !!! note "Related Questions"
             *   [How would you design a CI/CD pipeline that builds an application in AWS but deploys it to both AWS and Azure?](#ci-cd-multi-cloud-deploy)<br>
             *   [How would you design a CI/CD pipeline that builds an application in AWS but deploys it to both AWS and Azure?](#ci-cd-multi-cloud-deploy)<br>
 
 
 
----
 ---
 
 ## 2- How would you design a CI/CD pipeline that builds an application in AWS but deploys it to both AWS and Azure? {#ci-cd-multi-cloud-deploy}
@@ -82,8 +80,7 @@ Your answer goes here.
         !!! warning "Warnings"
             Some warnings about the questions to note
 
-        !!! note
-            Related Questions:
+        !!! note "Related Questions"
             *   [How would you design a CI/CD pipeline that builds an application in AWS but deploys it to both AWS and Azure?](#ci-cd-multi-cloud-deploy)<br>
             *   [How would you design a CI/CD pipeline that builds an application in AWS but deploys it to both AWS and Azure?](#ci-cd-multi-cloud-deploy)<br>
 
