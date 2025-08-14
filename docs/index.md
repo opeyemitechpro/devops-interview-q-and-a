@@ -47,7 +47,8 @@ Here are some of the most common questions you might face in a DevOps interview,
 
 ### CI/CD
 
-*   [How would you design a CI/CD pipeline that deploys to both AWS and Azure?](./by-knowledge-area/ci-cd-automation.md#ci-cd-multi-cloud-deploy)
+*   [How would you design a CI/CD pipeline that deploys to both AWS and Azure?](./by-knowledge-area/ci-cd-automation.md#ci-cd-multi-cloud-deploy1)
+*   [How would you design a CI/CD pipeline that deploys to both AWS and Azure?](./by-knowledge-area/ci-cd-automation.md#ci-cd-multi-cloud-deploy2)
 *   [How do you handle secrets in a Jenkins pipeline?](./by-knowledge-area/ci-cd-automation.md#jenkins-secrets)
 
 ### Infrastructure as Code
