@@ -12,7 +12,7 @@ Your answer goes here.
 
 ---
 
-???+ tip "Question"
+!!! tip "## Question"
 
     ## How would you design a CI/CD pipeline that builds an application in AWS but deploys it to both AWS and Azure? {#ci-cd-multi-cloud-deploy}
 
@@ -34,16 +34,16 @@ Your answer goes here.
 
         This design uses a central artifact registry as the "source of truth" for what gets deployed, ensuring consistency across clouds.
     
-    !!! tip 
-        Some tips about teh question
+        !!! tip 
+            Some tips about the question
 
-    !!! warning "Warnings"
-        Some warnings about the questions to note
+        !!! warning "Warnings"
+            Some warnings about the questions to note
 
-    !!! note
-        Related Questions:
-        *   [How would you design a CI/CD pipeline that builds an application in AWS but deploys it to both AWS and Azure?](#ci-cd-multi-cloud-deploy)
-        *   [How would you design a CI/CD pipeline that builds an application in AWS but deploys it to both AWS and Azure?](#ci-cd-multi-cloud-deploy)
+        !!! note
+            Related Questions:
+            *   [How would you design a CI/CD pipeline that builds an application in AWS but deploys it to both AWS and Azure?](#ci-cd-multi-cloud-deploy)
+            *   [How would you design a CI/CD pipeline that builds an application in AWS but deploys it to both AWS and Azure?](#ci-cd-multi-cloud-deploy)
 
 
 
