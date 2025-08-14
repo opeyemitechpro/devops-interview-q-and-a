@@ -38,7 +38,14 @@ Your answer goes here.
         Some tips about teh question
 
     !!! warning "Warnings"
-        Some warnings about the questions to note        
+        Some warnings about the questions to note
+
+    !!! note
+        Related Questions:
+        *   [How would you design a CI/CD pipeline that builds an application in AWS but deploys it to both AWS and Azure?](#ci-cd-multi-cloud-deploy)
+        *   [How would you design a CI/CD pipeline that builds an application in AWS but deploys it to both AWS and Azure?](#ci-cd-multi-cloud-deploy)
+
+
 
 ---
 
