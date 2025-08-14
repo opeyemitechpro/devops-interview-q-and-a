@@ -49,6 +49,8 @@ Your answer goes here. -->
     !!! note "Related Questions"
         *   [How is Azure?](#ci-cd-multi-cloud-deploy2)<br>
         *   [How is AWS?](#ci-cd-multi-cloud-deploy1)<br>
+        *   [How is GCP Testing?](#ci-cd-multi-cloud-deploy3)<br>
+        *   [How is GCP Deploying?](#ci-cd-multi-cloud-deploy4)<br>
 
 ---
 
@@ -79,6 +81,8 @@ Your answer goes here. -->
     !!! note "Related Questions"
         *   [How is AWS?](#ci-cd-multi-cloud-deploy1)<br>
         *   [How is Azure?](#ci-cd-multi-cloud-deploy2)<br>
+        *   [How is GCP Testing?](#ci-cd-multi-cloud-deploy3)<br>
+        *   [How is GCP Deploying?](#ci-cd-multi-cloud-deploy4)<br>
 
 ---
 
@@ -110,5 +114,6 @@ Your answer goes here. -->
         *   [How is AWS?](#ci-cd-multi-cloud-deploy1)<br>
         *   [How is Azure?](#ci-cd-multi-cloud-deploy2)<br>
         *   [How is GCP Testing?](#ci-cd-multi-cloud-deploy3)<br>
+        *   [How is GCP Deploying?](#ci-cd-multi-cloud-deploy4)<br>
 
 ---
