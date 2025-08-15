@@ -1,4 +1,5 @@
 ---
+template: home.html
 tags: [home, overview, navigation]
 # hide:
 #   - navigation
