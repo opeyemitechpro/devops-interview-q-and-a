@@ -1,106 +1,182 @@
-<!-- docs/index.html - This will be your custom homepage -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
-    <!-- You can link to a custom CSS file -->
-    <link rel="stylesheet" href="assets/css/custom_homepage.css">
-    <!-- Example using Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
-    <div class="hero">
-        <div class="hero-content">
-            <h1>Ace Your Next Tech Interview</h1>
-            <p>A comprehensive collection of questions for DevOps, SRE, Cloud, and Platform Engineering roles.</p>
-            <div class="search-container">
-                <input type="text" id="custom-search-box" placeholder="Search for 'Kubernetes', 'AWS', 'System Design'...">
-                <button id="custom-search-button"><i class="fa-solid fa-search"></i></button>
-            </div>
-        </div>
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Ace Your <span class="highlight">DevOps</span>, <span class="highlight">Cloud</span> & SRE Interviews</h1>
+    <p class="subheading">A continuously updated collection of real-world interview questions and expert answers.</p>
+    <div class="cta-buttons">
+      <a href="{{ base_url }}/by-role/" class="btn primary">Browse by Role</a>
+      <a href="{{ base_url }}/by-knowledge-area/" class="btn secondary">Browse by Skill</a>
     </div>
+  </div>
+</section>
 
-    <div class="page-container">
-        <!-- By Role Section -->
-        <section class="card-section">
-            <h2>Browse by Role</h2>
-            <div class="card-grid">
-                <a href="by-role/devops/" class="card">
-                    <i class="fa-solid fa-people-group"></i>
-                    <h3>DevOps Engineer</h3>
-                    <p>Focus on CI/CD, automation, and the software development lifecycle.</p>
-                </a>
-                <a href="by-role/sre/" class="card">
-                    <i class="fa-solid fa-shield-alt"></i>
-                    <h3>Site Reliability Engineer</h3>
-                    <p>Emphasizing reliability, scalability, and operational excellence.</p>
-                </a>
-                <a href="by-role/cloud-engineer/" class="card">
-                    <i class="fa-solid fa-cloud"></i>
-                    <h3>Cloud Engineer</h3>
-                    <p>Deep dive into cloud platforms, infrastructure, and services.</p>
-                </a>
-            </div>
-        </section>
+<!-- Search Bar -->
+<section class="search-section">
+  <input type="search" id="search-query" placeholder="Search 500+ interview questions...">
+  <div id="search-results"></div>
+</section>
 
-        <!-- By Technology Section -->
-        <section class="card-section">
-            <h2>Browse by Key Technology</h2>
-            <div class="card-grid">
-                <a href="tags.md#aws" class="card">
-                    <i class="fa-brands fa-aws"></i>
-                    <h3>AWS</h3>
-                </a>
-                <a href="tags.md#azure" class="card">
-                    <i class="fa-brands fa-microsoft"></i>
-                    <h3>Azure</h3>
-                </a>
-                <a href="tags.md#gcp" class="card">
-                    <i class="fa-brands fa-google"></i>
-                    <h3>GCP</h3>
-                </a>
-                 <a href="questions/03-containers/" class="card">
-                    <i class="fa-brands fa-docker"></i>
-                    <h3>Containers</h3>
-                </a>
-                 <a href="questions/02-iac/" class="card">
-                    <i class="fa-solid fa-code"></i>
-                    <h3>IaC</h3>
-                </a>
-            </div>
-        </section>
+<!-- Category Cards -->
+<section class="categories">
+  <h2>Explore Categories</h2>
+  <div class="category-grid">
+    <a class="category-card" href="{{ base_url }}/by-role/">
+      <span class="material-icons">groups</span>
+      <h3>By Role</h3>
+      <p>DevOps, SRE, Cloud Engineer, and more</p>
+    </a>
+    <a class="category-card" href="{{ base_url }}/by-knowledge-area/">
+      <span class="material-icons">cloud</span>
+      <h3>By Knowledge Area</h3>
+      <p>AWS, Azure, GCP, Kubernetes...</p>
+    </a>
+    <a class="category-card" href="{{ base_url }}/by-question-type/">
+      <span class="material-icons">help_outline</span>
+      <h3>By Question Type</h3>
+      <p>Theoretical, Practical, Scenario</p>
+    </a>
+    <a class="category-card" href="{{ base_url }}/by-difficulty-level/">
+      <span class="material-icons">bar_chart</span>
+      <h3>By Difficulty</h3>
+      <p>Beginner to Expert</p>
+    </a>
+    <a class="category-card" href="{{ base_url }}/resources/">
+      <span class="material-icons">menu_book</span>
+      <h3>Resources</h3>
+      <p>Cheat sheets, study guides</p>
+    </a>
+  </div>
+</section>
 
-        <!-- Contribution Section -->
-        <section class="contribution-section">
-            <h2>Become a Contributor</h2>
-            <p>This project is built by the community, for the community. Help us add and improve questions by contributing on GitHub.</p>
-            <a href="https://github.com/your-repo" class="button-cta" target="_blank" rel="noopener">
-                <i class="fa-brands fa-github"></i> View on GitHub
-            </a>
-        </section>
+<!-- Tags -->
+<section class="tags-section">
+  <h2>🔥 Trending Tags</h2>
+  <div class="tag-list">
+    <a href="{{ base_url }}/tags/aws/" class="tag">AWS</a>
+    <a href="{{ base_url }}/tags/kubernetes/" class="tag">Kubernetes</a>
+    <a href="{{ base_url }}/tags/ci-cd/" class="tag">CI/CD</a>
+    <a href="{{ base_url }}/tags/terraform/" class="tag">Terraform</a>
+    <a href="{{ base_url }}/tags/docker/" class="tag">Docker</a>
+    <a href="{{ base_url }}/tags/monitoring/" class="tag">Monitoring</a>
+  </div>
+</section>
+
+<!-- How It Works -->
+<section class="how-it-works">
+  <h2>How It Works</h2>
+  <div class="steps">
+    <div class="step">
+      <span class="material-icons">search</span>
+      <h3>Browse</h3>
+      <p>Find questions by category, skill, or difficulty.</p>
     </div>
+    <div class="step">
+      <span class="material-icons">lightbulb</span>
+      <h3>Learn</h3>
+      <p>Understand answers with pro tips and real-world examples.</p>
+    </div>
+    <div class="step">
+      <span class="material-icons">check_circle</span>
+      <h3>Ace</h3>
+      <p>Walk into your interview with confidence.</p>
+    </div>
+  </div>
+</section>
 
-    <script>
-        // JavaScript to redirect the custom search to MkDocs' search page
-        const searchBox = document.getElementById('custom-search-box');
-        const searchButton = document.getElementById('custom-search-button');
+<!-- Resources -->
+<section class="resources-section">
+  <h2>Resources</h2>
+  <div class="resource-grid">
+    <a href="{{ base_url }}/resources/cheatsheets/" class="resource-card">
+      <span class="material-icons">description</span>
+      Cheat Sheets
+    </a>
+    <a href="{{ base_url }}/resources/labs/" class="resource-card">
+      <span class="material-icons">science</span>
+      Hands-on Labs
+    </a>
+    <a href="{{ base_url }}/resources/guides/" class="resource-card">
+      <span class="material-icons">menu_book</span>
+      Study Guides
+    </a>
+  </div>
+</section>
 
-        function performSearch() {
-            const query = searchBox.value;
-            if (query) {
-                // Adjust this URL to your site's structure
-                window.location.href = `/search.html?q=${encodeURIComponent(query)}`;
-            }
-        }
+<!-- Contribute -->
+<section class="contribute-section">
+  <h2>💡 Contribute to This Project</h2>
+  <p>Help make this the most comprehensive DevOps interview resource.</p>
+  <a href="https://github.com/your-repo" class="btn primary">Contribute on GitHub</a>
+</section>
 
-        searchButton.addEventListener('click', performSearch);
-        searchBox.addEventListener('keyup', function(event) {
-            if (event.key === 'Enter') {
-                performSearch();
-            }
+<!-- Footer -->
+<footer class="footer">
+  <p>© 2025 DevOps Interview Q&A. Built with ❤️ and Material for MkDocs.</p>
+</footer>
+
+<!-- Search Integration Script -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const searchInput = document.getElementById("search-query");
+  const resultsContainer = document.getElementById("search-results");
+
+  let searchIndex = [];
+
+  // Load MkDocs search index
+  fetch("search/search_index.json")
+    .then(response => response.json())
+    .then(data => {
+      searchIndex = data.docs;
+    });
+
+  searchInput.addEventListener("input", function() {
+    const query = searchInput.value.toLowerCase();
+    resultsContainer.innerHTML = "";
+
+    if (query.length > 1) {
+      const results = searchIndex.filter(doc =>
+        doc.title.toLowerCase().includes(query) ||
+        doc.text.toLowerCase().includes(query)
+      ).slice(0, 8);
+
+      if (results.length > 0) {
+        results.forEach(result => {
+          const item = document.createElement("div");
+          item.className = "search-result";
+
+          // Append a #anchor to the result location if possible
+          let anchor = "";
+          if (result.text) {
+            // create an anchor ID from the first few words of the text
+            anchor = "#q-" + result.text.split(" ").slice(0, 5).join("-").toLowerCase().replace(/[^a-z0-9\-]/g, "");
+          }
+
+          item.innerHTML = `<a href="${result.location}${anchor}">${result.title}</a>`;
+          resultsContainer.appendChild(item);
         });
-    </script>
-</body>
-</html>
+      } else {
+        resultsContainer.innerHTML = "<div class='no-results'>No matches found</div>";
+      }
+    }
+  });
+
+  // Highlight target question when page loads with an anchor
+  if (window.location.hash.startsWith("#q-")) {
+    const targetId = window.location.hash.substring(1);
+    const targetEl = document.getElementById(targetId);
+    if (targetEl) {
+      targetEl.classList.add("highlight-question");
+      targetEl.scrollIntoView({ behavior: "smooth", block: "center" });
+
+      setTimeout(() => {
+        targetEl.classList.remove("highlight-question");
+      }, 3000);
+    }
+  }
+});
+</script>
+
+{% endblock %}

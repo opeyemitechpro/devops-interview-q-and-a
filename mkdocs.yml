@@ -222,6 +222,7 @@ extra:
 # Extra StyleSheets
 extra_css:
   - stylesheets/extra.css
+  - assets/css/custom_homepage.css
 
   
 # Extensions
