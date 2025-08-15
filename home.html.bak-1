@@ -1,0 +1,106 @@
+<!-- docs/index.html - This will be your custom homepage -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <!-- You can link to a custom CSS file -->
+    <link rel="stylesheet" href="assets/css/custom_homepage.css">
+    <!-- Example using Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Ace Your Next Tech Interview</h1>
+            <p>A comprehensive collection of questions for DevOps, SRE, Cloud, and Platform Engineering roles.</p>
+            <div class="search-container">
+                <input type="text" id="custom-search-box" placeholder="Search for 'Kubernetes', 'AWS', 'System Design'...">
+                <button id="custom-search-button"><i class="fa-solid fa-search"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-container">
+        <!-- By Role Section -->
+        <section class="card-section">
+            <h2>Browse by Role</h2>
+            <div class="card-grid">
+                <a href="by-role/devops/" class="card">
+                    <i class="fa-solid fa-people-group"></i>
+                    <h3>DevOps Engineer</h3>
+                    <p>Focus on CI/CD, automation, and the software development lifecycle.</p>
+                </a>
+                <a href="by-role/sre/" class="card">
+                    <i class="fa-solid fa-shield-alt"></i>
+                    <h3>Site Reliability Engineer</h3>
+                    <p>Emphasizing reliability, scalability, and operational excellence.</p>
+                </a>
+                <a href="by-role/cloud-engineer/" class="card">
+                    <i class="fa-solid fa-cloud"></i>
+                    <h3>Cloud Engineer</h3>
+                    <p>Deep dive into cloud platforms, infrastructure, and services.</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- By Technology Section -->
+        <section class="card-section">
+            <h2>Browse by Key Technology</h2>
+            <div class="card-grid">
+                <a href="tags.md#aws" class="card">
+                    <i class="fa-brands fa-aws"></i>
+                    <h3>AWS</h3>
+                </a>
+                <a href="tags.md#azure" class="card">
+                    <i class="fa-brands fa-microsoft"></i>
+                    <h3>Azure</h3>
+                </a>
+                <a href="tags.md#gcp" class="card">
+                    <i class="fa-brands fa-google"></i>
+                    <h3>GCP</h3>
+                </a>
+                 <a href="questions/03-containers/" class="card">
+                    <i class="fa-brands fa-docker"></i>
+                    <h3>Containers</h3>
+                </a>
+                 <a href="questions/02-iac/" class="card">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>IaC</h3>
+                </a>
+            </div>
+        </section>
+
+        <!-- Contribution Section -->
+        <section class="contribution-section">
+            <h2>Become a Contributor</h2>
+            <p>This project is built by the community, for the community. Help us add and improve questions by contributing on GitHub.</p>
+            <a href="https://github.com/your-repo" class="button-cta" target="_blank" rel="noopener">
+                <i class="fa-brands fa-github"></i> View on GitHub
+            </a>
+        </section>
+    </div>
+
+    <script>
+        // JavaScript to redirect the custom search to MkDocs' search page
+        const searchBox = document.getElementById('custom-search-box');
+        const searchButton = document.getElementById('custom-search-button');
+
+        function performSearch() {
+            const query = searchBox.value;
+            if (query) {
+                // Adjust this URL to your site's structure
+                window.location.href = `/search.html?q=${encodeURIComponent(query)}`;
+            }
+        }
+
+        searchButton.addEventListener('click', performSearch);
+        searchBox.addEventListener('keyup', function(event) {
+            if (event.key === 'Enter') {
+                performSearch();
+            }
+        });
+    </script>
+</body>
+</html>
