@@ -1,75 +1,122 @@
 ---
-template: home.html
+# template: home.html
 tags: [home, overview, navigation]
 # hide:
 #   - navigation
 #   - toc
 ---
 
-# Welcome to the DevOps & Cloud Interview Hub
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Ace Your <span class="highlight">DevOps</span>, <span class="highlight">Cloud</span> & SRE Interviews</h1>
+    <p class="subheading">A continuously updated collection of real-world interview questions and expert answers.</p>
+    <div class="cta-buttons">
+      <a href="by-role/index.html" class="btn primary">Browse by Role</a>
+      <a href="by-knowledge-area/index.html" class="btn secondary">Browse by Skill</a>
+    </div>
+  </div>
+</section>
 
+<!-- Search Bar -->
+<section class="search-section">
+  <input type="search" id="search-query" placeholder="Search 500+ interview questions...">
+</section>
 
-Welcome to the Home page of the Devops & Cloud Interview Hub!
+<!-- Category Cards -->
+<section class="categories">
+  <h2>Explore Categories</h2>
+  <div class="category-grid">
+    <a class="category-card" href="by-role/index.html">
+      <span class="material-icons">groups</span>
+      <h3>By Role</h3>
+      <p>DevOps, SRE, Cloud Engineer, and more</p>
+    </a>
+    <a class="category-card" href="by-knowledge-area/index.html">
+      <span class="material-icons">cloud</span>
+      <h3>By Knowledge Area</h3>
+      <p>AWS, Azure, GCP, Kubernetes...</p>
+    </a>
+    <a class="category-card" href="by-question-type/index.html">
+      <span class="material-icons">help_outline</span>
+      <h3>By Question Type</h3>
+      <p>Theoretical, Practical, Scenario</p>
+    </a>
+    <a class="category-card" href="by-difficulty-level/index.html">
+      <span class="material-icons">bar_chart</span>
+      <h3>By Difficulty</h3>
+      <p>Beginner to Expert</p>
+    </a>
+    <a class="category-card" href="resources/index.html">
+      <span class="material-icons">menu_book</span>
+      <h3>Resources</h3>
+      <p>Cheat sheets, study guides</p>
+    </a>
+  </div>
+</section>
 
-This site is a comprehensive, community-driven collection of interview questions and answers for **DevOps, Cloud, Site Reliability (SRE), and Platform Engineering** roles.
+<!-- Featured Tags -->
+<section class="tags-section">
+  <h2>🔥 Trending Tags</h2>
+  <div class="tag-list">
+    <a href="tags/aws/" class="tag">AWS</a>
+    <a href="tags/kubernetes/" class="tag">Kubernetes</a>
+    <a href="tags/ci-cd/" class="tag">CI/CD</a>
+    <a href="tags/terraform/" class="tag">Terraform</a>
+    <a href="tags/docker/" class="tag">Docker</a>
+    <a href="tags/monitoring/" class="tag">Monitoring</a>
+  </div>
+</section>
 
-Our goal is to provide a structured, easy-to-navigate resource to help you prepare for your next technical interview.
+<!-- How It Works -->
+<section class="how-it-works">
+  <h2>How It Works</h2>
+  <div class="steps">
+    <div class="step">
+      <span class="material-icons">search</span>
+      <h3>Browse</h3>
+      <p>Find questions by category, skill, or difficulty.</p>
+    </div>
+    <div class="step">
+      <span class="material-icons">lightbulb</span>
+      <h3>Learn</h3>
+      <p>Understand answers with pro tips and real-world examples.</p>
+    </div>
+    <div class="step">
+      <span class="material-icons">check_circle</span>
+      <h3>Ace</h3>
+      <p>Walk into your interview with confidence.</p>
+    </div>
+  </div>
+</section>
 
-## How to Use This Site
+<!-- Resources -->
+<section class="resources-section">
+  <h2>Resources</h2>
+  <div class="resource-grid">
+    <a href="resources/cheatsheets.html" class="resource-card">
+      <span class="material-icons">description</span>
+      Cheat Sheets
+    </a>
+    <a href="resources/labs.html" class="resource-card">
+      <span class="material-icons">science</span>
+      Hands-on Labs
+    </a>
+    <a href="resources/guides.html" class="resource-card">
+      <span class="material-icons">menu_book</span>
+      Study Guides
+    </a>
+  </div>
+</section>
 
-You can navigate the questions in several ways:
+<!-- Contribute -->
+<section class="contribute-section">
+  <h2>💡 Contribute to This Project</h2>
+  <p>Help make this the most comprehensive DevOps interview resource.</p>
+  <a href="https://github.com/your-repo" class="btn primary">Contribute on GitHub</a>
+</section>
 
-*   **[By Role](by-role/devops.md)**: Jump directly to questions tailored for a specific role you're interviewing for.
-*   **[By Competency](by-competency/01-foundational-concepts.md)**: Focus on strengthening your knowledge in specific technical areas like Kubernetes, Terraform, or CI/CD.
-*   **[By Question Type](by-question-type/behavioral-situational.md)**: Prepare for different interview formats, from behavioral questions to system design challenges.
-*   **[All Tags](tags.md)**: Use our tag cloud to filter questions by specific technologies, concepts, or roles.
-
-Ready to get started? Choose a category from the top navigation bar or dive into one of the sections above.
-
-This repository is designed to provide a comprehensive collection of DevOps and Cloud Engineering interview questions and answers, organized by topics, roles, and technologies.
-
-You can navigate through the repository using the sidebar or the links below:
-
-- [Tags](tags.md): Browse questions by tags.
-- [By Role](by-role/): Explore questions categorized by specific roles.
-- [By Topic](by-topic/): Find questions organized by topics.
-- [By Technology](by-technology/): Discover questions related to specific technologies.
-- [Resources](resources/): Access additional resources, tools, and utilities.
-
-- [YouTube](yt.md): Check out related video content.
-- [Profile](profile.md): Learn more about the author and contributions.
-
-
------------
-
-# Key Questions for DevOps Engineers
-
-Here are some of the most common questions you might face in a DevOps interview, collected from across all competencies.
-
-### CI/CD
-
-*   [How would you design a CI/CD pipeline that deploys to both AWS and Azure?](./by-knowledge-area/ci-cd-automation.md#ci-cd-multi-cloud-deploy1)
-*   [How would you design a CI/CD pipeline that deploys to both AWS and Azure?](./by-knowledge-area/ci-cd-automation.md#ci-cd-multi-cloud-deploy2)
-*   [How do you handle secrets in a Jenkins pipeline?](./by-knowledge-area/ci-cd-automation.md#jenkins-secrets)
-
-### Infrastructure as Code
-
-*   [Link to an IaC question...]
-
--------------
-
-
-
-## Question 1: Placeholder Question?
-Your answer goes here.
-
-!!! note
-    This is a helpful note related to the question.
-
-!!! tip
-    Useful tip for remembering key points.
-
-!!! warning
-    Common pitfalls to avoid.
-
-{{ include "related.md" }}
+<!-- Footer -->
+<footer class="footer">
+  <p>© 2025 DevOps Interview Q&A. Built with ❤️ and Material for MkDocs.</p>
+</footer>

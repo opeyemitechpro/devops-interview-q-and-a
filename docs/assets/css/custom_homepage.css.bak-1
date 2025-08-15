@@ -1,0 +1,95 @@
+/* docs/assets/css/custom_homepage.css */
+/* Hero Section */
+.hero {
+    background: linear-gradient(45deg, #3f51b5, #00bcd4); /* Example gradient */
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+.hero-content h1 { font-size: 3rem; margin-bottom: 10px; }
+.hero-content p { font-size: 1.2rem; margin-bottom: 30px; }
+.search-container {
+    display: flex;
+    justify-content: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+#custom-search-box {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    font-size: 1rem;
+}
+#custom-search-button {
+    padding: 15px 20px;
+    border: none;
+    background-color: #ff9800;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    font-size: 1rem;
+}
+
+/* General Page Styles */
+.page-container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Card Sections */
+.card-section { margin-bottom: 50px; }
+.card-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #333;
+}
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+.card {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+.card i {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #3f51b5;
+}
+.card h3 { font-size: 1.5rem; margin-bottom: 10px; }
+.card p { font-size: 1rem; line-height: 1.5; }
+
+/* Contribution Section */
+.contribution-section {
+    text-align: center;
+    background-color: #f5f5f5;
+    padding: 40px 20px;
+    border-radius: 8px;
+}
+.button-cta {
+    display: inline-block;
+    background-color: #24292e;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    transition: background-color 0.2s;
+}
+.button-cta:hover { background-color: #444; }
+.button-cta i { margin-right: 8px; }

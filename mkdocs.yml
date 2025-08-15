@@ -75,8 +75,10 @@ theme:
 # font
   font:
     # text: Arima
-    text: Comic Neue
-    code: Kode Mono
+    # text: Comic Neue
+    # code: Kode Mono
+    text: Roboto
+    code: Roboto Mono
 
 plugins:
   - social:
