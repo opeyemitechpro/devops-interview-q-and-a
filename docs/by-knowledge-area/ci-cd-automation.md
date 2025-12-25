@@ -24,6 +24,8 @@ Your answer goes here. -->
 
 ## Que 1 - How is AWS? {#ci-cd-multi-cloud-deploy1}
 
+This is Question 1 content, read it and click below for answer.
+
 ??? success "Answer"
 
     This is a multi-stage process focusing on artifact management and environment-specific deployment scripts.
@@ -56,6 +58,9 @@ Your answer goes here. -->
 
 ## Que 2 - How is Azure? {#ci-cd-multi-cloud-deploy2}
 
+This is Question 2 content, read it and click below for answer.
+
+
 ??? success "Answer 2"
 
     This is a multi-stage process focusing on artifact management and environment-specific deployment scripts.
@@ -87,6 +92,9 @@ Your answer goes here. -->
 ---
 
 ## Que 3 - How is GCP? {#ci-cd-multi-cloud-deploy3}
+
+This is Question 3 content, read it and click below for answer.
+
 
 ??? success "Answer 3"
 
