@@ -125,3 +125,38 @@ This is Question 3 content, read it and click below for answer.
         *   [How is GCP Deploying?](#ci-cd-multi-cloud-deploy4)<br>
 
 ---
+
+## Que 4 - How is GCP? {#ci-cd-multi-cloud-deploy3}
+
+This is Question 3 content, read it and click below for answer.
+
+
+??? success "Answer 3"
+
+    This is a multi-stage process focusing on artifact management and environment-specific deployment scripts.
+    
+    1.  **Source & Build (in AWS):**
+        *   **Trigger:** A `git push` to a repository (e.g., AWS CodeCommit, GitHub, Azure Repos) triggers an AWS CodePipeline pipeline.
+        *   **Build Stage:** An AWS CodeBuild project pulls the source code, runs tests, and builds the application. Most importantly, it packages the application into a cloud-agnostic artifact, like a Docker container, and pushes it to a central registry like Amazon ECR or Docker Hub.
+    
+    2.  **Deployment (Multi-cloud):**
+        *   **AWS Deployment Stage:** A CodeDeploy or CloudFormation step in the pipeline pulls the Docker image from ECR and deploys it to an AWS environment (e.g., ECS, EKS, or EC2).
+        *   **Azure Deployment Stage:** This is the key part. We add another stage to CodePipeline that triggers an Azure-native deployment tool. This could be:
+            *   **A Lambda/CodeBuild Step:** A step that runs the Azure CLI (`az`) or Terraform/Pulumi to deploy the container to Azure Kubernetes Service (AKS) or Azure App Service. This step would need Azure credentials, securely stored in AWS Secrets Manager.
+            *   **Webhook Trigger:** The pipeline could call a webhook that triggers an Azure DevOps Pipeline or a GitHub Action, which then handles the deployment to Azure.
+
+    This design uses a central artifact registry as the "source of truth" for what gets deployed, ensuring consistency across clouds.
+
+    !!! tip "Pro Tips"
+        Some tips about the question
+
+    !!! warning "Common Pitfalls"
+        Some warnings about the questions to note
+
+    !!! note "Related Questions"
+        *   [How is AWS?](#ci-cd-multi-cloud-deploy1)<br>
+        *   [How is Azure?](#ci-cd-multi-cloud-deploy2)<br>
+        *   [How is GCP Testing?](#ci-cd-multi-cloud-deploy3)<br>
+        *   [How is GCP Deploying?](#ci-cd-multi-cloud-deploy4)<br>
+
+---

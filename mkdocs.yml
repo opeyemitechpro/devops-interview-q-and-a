@@ -323,6 +323,11 @@ nav:
       - Networking: by-knowledge-area/networking.md
       - Security & DevSecOps: by-knowledge-area/security-devsecops.md
       - Monitoring & Observability: by-knowledge-area/monitoring-observability.md
+  - Cloud Exams:
+      - AWS Certifications: 
+          - AWS Solutions Architect: cloud_cert_exams/aws_cert/aws_saa.md
+      - GCP Certifications: 
+          - GCP Solutions Architect: cloud_cert_exams/gcp_cert/gcp_pca.md
   # - By Question Type:
   #     - Theoretical & Conceptual: by-question-type/theoretical-conceptual.md
   #     - Scenario Based: by-question-type/scenario-based.md
